@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "FixYT",
+  "version": "1.0",
+  "description": "Fixes that YT cookie bug with one click",
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" },
+  "browser_action": {
+          "default_title": "FixYT",
+          "default_popup": "popup.html"
+  },
+  "permissions": [
+    "cookies",
+    "https://www.youtube.com/",
+    "*://www.youtube.com/",
+    "storage",
+    "alarms",
+    "background"
+  ],
+  "background": {
+   "scripts": ["background.js"],
+   "persistent": false
+ }
+}
